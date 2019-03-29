@@ -1,0 +1,164 @@
+body {margin:0;}
+
+.navbar {
+  background-color: rgba(51, 51, 51, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar ul{
+  list-style-type:none;
+  float: right;
+  padding-right: 50px;
+  margin: 0;
+}
+
+.navbar ul li  {
+  display: inline-block;
+  padding: 20px 0;
+}
+
+.navbar ul li a {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 21px;
+  color: #f2f2f2;
+  text-decoration: none;;
+  letter-spacing: 1px;
+  padding: 20px 35px;
+}
+
+.navbar ul li:hover {
+  background-color: rgba(115, 225, 184, 0.5);
+  color:black;
+}
+
+.navbar ul li a:hover{
+  color: black;
+  margin:0;
+}
+
+article {
+  margin:0;
+  padding-top: 1px;
+  padding-bottom: 25px;
+  background-color: #d9d9d9;
+}
+
+.main{
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.main p{
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    word-spacing: 2px;
+}
+
+.main h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    line-height: 30px;
+}
+
+.parallax {
+    font-family: 'Amatic SC', cursive;
+    background-image: url('images/deer.jpg');
+    margin:0;
+    letter-spacing: 10px;
+    word-spacing: 580px;
+    padding-top: 420px;
+    padding-left: 160px;
+    font-size: 100px;
+    font-weight: 100;
+    color: white;
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax img{
+  width: 90%;
+}
+
+ .table h3{
+    position: relative;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    width: 25%;
+    margin-left: 38%;
+    margin-right: 38%;
+}
+
+.table img {
+    margin-left: 42%;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: absolute;
+    float: right;
+    box-shadow: 0px 3px 13px 1px rgba(0, 0, 0, 1);
+    display: inline-block;
+    width: 18%;
+    height: auto;
+}
+
+.table pre{
+    position: relative;
+    margin-right: 2%;
+    font-size: 0.9vw;
+}
+
+.fa-info-circle{
+    color: #2bce89;
+}
+
+b {
+    color:#2dd28d;
+}
+
+.links a{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.links a:hover{
+  color: #595959;
+}
+
+.links th{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 108%;
+    color: #24a871;
+    padding-bottom: 1%;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+td {
+    text-align: center;
+  padding: 0.3% 20%;
+}
+
+footer{
+  background-color: #333333;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: right;
+  color: #cccccc;
+}

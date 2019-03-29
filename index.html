@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <title>Laboratorium 1</title>
+</head>
+
+<body>
+  <header class="parallax">
+    ELEMENTY HTML
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li>
+        <a href="#table">&lt;table&gt;</a>
+      </li>
+      <li>
+        <a href="#ul">&lt;ul&gt;</a>
+      </li>
+      <li>
+        <a href="#ol">&lt;ol&gt;</a>
+      </li>
+      <li>
+        <a href="#pre">&lt;pre&gt;</a>
+      </li>
+    </ul>
+  </nav>
+
+  <article class="table">
+    <a id="table"></a>
+    <h3>Znacznik tabelki
+      <span style="color:#2dd28d">&lt;table&gt;</span>
+    </h3>
+    <section class="main">
+      <p>Służy do utworzenia tabeli składającej się z komórek utworzonych za pomocą znaczników
+        <b>&lt;td&gt;</b>
+        oraz
+        <b>&lt;th&gt;</b> zgrupowanych w wiersze dzięki znacznikowi
+        <b>&lt;tr&gt;</b>. Komórki tabeli
+        <b>&lt;td&gt;</b> znajdują się wewnątrz znaczników wierszy
+        <b>&lt;tr&gt;</b>. Może zawierać część nagłówkową
+        <b>&lt;thead&gt;</b>, ciało
+        <b>&lt;tbody&gt;</b> i stopkę
+        <b>&lt;tfoot&gt;</b>.</p>
+
+      <p>
+        <b>&lt;th&gt;</b> - znacznik nagłówka kolumny w tabelce, zawiera domyślnie pogrubiony i wyśrodkowany tekst</p>
+      <p>
+        <b>&lt;td&gt;</b> - znacznik standardowej pojedynczej komórki</p>
+      <p>
+        <b>&lt;tr&gt;</b> - znacznik wiersza</p>
+
+      <h4>PRZYKŁAD</h4>
+
+      <img src="images/tabelka.png" alt="tabelka">
+      <pre><code>
+&lt;p>Ranking FIVB&lt;/p>
+  &lt;table>
+    &lt;thead>
+      &lt;tr>&lt;th>Miejsce&lt;/th>&lt;th>Reprezentacja&lt;/th>&lt;th>Punkty&lt;/th>&lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+       &lt;tr>&lt;td>1&lt;/td>&lt;td>Brazylia&lt;/td>&lt;td>315&lt;/td>&lt;/tr>
+        &lt;tr>&lt;td>2&lt;/td>&lt;td>Stany Zjednoczone&lt;/td>&lt;td> 270 &lt;/td>&lt;/tr>
+        &lt;tr>&lt;td>3&lt;/td>&lt;td>Polska&lt;/td>&lt;td>262&lt;/td>&lt;/tr> 
+        &lt;tr>&lt;td>4&lt;/td>&lt;td>Włochy&lt;/td>&lt;td>240&lt;/td>&lt;/tr>
+        &lt;tr>&lt;td>4&lt;/td>&lt;td>Rosja&lt;/td>&lt;td>240&lt;/td>&lt;/tr>
+    &lt;/tbody>
+    &lt;tfoot>
+      &lt;tr>&lt;td>ostatnie&lt;/td>&lt;td>Kamerun&lt;/td>&lt;td>27&lt;/td>&lt;/tr>
+    &lt;/tfoot>
+  &lt;/table>
+</code></pre>
+
+      <section class="links">
+        <h4> WIĘCEJ INFORMACJI &nbsp;
+          <i class="fas fa-info-circle"></i>
+        </h4>
+
+        <table>
+          <thead>
+            <tr>
+              <th> W języku angielskim </th>
+              <th> W języku polskim </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com/tags/tag_table.asp">w3schools</a>
+              </td>
+              <td>
+                <a href="http://www.kurshtml.edu.pl/html/table,html.html">kurs HTML</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.tutorialspoint.com/html/html_table_tag.htm">tutorialspoint</a>
+              </td>
+              <td>
+                <a href="http://miroslawzelent.pl/kurs-html/tabele-tr-td-th-table/">miroslawzelent</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+    </section>
+  </article>
+  <p class="parallax">
+    <img src="images/csshtml.png" alt="css html logos">
+  </p>
+
+  <article class="table">
+    <a id="ul"></a>
+    <h3>Znacznik listy nienumerowanej
+      <span style="color:#2dd28d">&lt;ul&gt;</span>
+    </h3>
+    <section class="main">
+      <p>
+        Służy do wskazania listy nieuporządkowanej, czyli zestawu punktów, które nie mają porządku liczbowego i ich kolejność nie
+        ma znaczenia. Poszczególne punkty w liście są definiowane poprzez element
+        <b>&lt;li&gt;</b>, który jest jedynym dopuszczalnym elementem w znaczniku
+        <b>&lt;ul&gt;</b>. Listy można w sobie zagnieżdżać.
+      </p>
+      <p>
+        <b>&lt;li&gt;</b> - pojedyncza pozycja w liście</p>
+
+      <h4>PRZYKŁAD</h4>
+
+      <img src="images/lista_ul.png" alt="lista nienumerowana">
+      <pre><code>
+     &lt;ul>
+      &lt;li>pierwsza pozycja&lt;/li>
+        &lt;li>druga pozycja  
+          &lt;ul>
+            &lt;li>druga pozycja pierwszy podpunkt&lt;/li>
+            &lt;li>druga pozycja drugi podpunkt&lt;/li>
+            &lt;li>druga pozycja trzeci podpunkt&lt;/li>
+          &lt;/ul>
+        &lt;/li>   
+      &lt;li>trzecia pozycja&lt;/li>
+    &lt;/ul>
+  </code></pre>
+      <section class="links">
+        <h4> WIĘCEJ INFORMACJI &nbsp;
+          <i class="fas fa-info-circle"></i>
+        </h4>
+
+        <table>
+          <thead>
+            <tr>
+              <th> W języku angielskim </th>
+              <th> W języku polskim </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com/TAGS/tag_ul.asp">w3schools</a>
+              </td>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="http://how2html.pl/lista-nieuporzadkowana-html/">how2HTML</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.javatpoint.com/html-unordered-list">javaTpoint</a>
+              </td>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="http://miroslawzelent.pl/kurs-html/listy-ul-ol/">miroslawzelent</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+    </section>
+  </article>
+  <p class="parallax">
+    <img src="images/csshtml.png" alt="css html logos">
+  </p>
+
+
+  <article class="table">
+    <a id="ol"></a>
+    <h3>Znacznik listy numerowanej
+      <span style="color:#2dd28d">&lt;ol&gt;</span>
+    </h3>
+    <section class="main">
+      <p>
+        Służy do wskazania listy uporządkowanej, czyli zestawu punktów, które mają porządek liczbowego, a ich kolejność ma znaczenie.
+        Poszczególne punkty w liście są definiowane poprzez element
+        <b>&lt;li&gt;</b>, który jest jedynym dopuszczalnym elementem w znaczniku
+        <b>&lt;ol&gt;</b>. Listy można w sobie zagnieżdżać.
+      </p>
+      <p>
+        <b>&lt;li&gt;</b> - pojedyncza pozycja w liście</p>
+
+      <h4>PRZYKŁAD</h4>
+
+      <img src="images/lista_ol.png" alt="lista numerowana">
+      <pre><code>
+    &lt;ol>
+      &lt;li>pierwsza pozycja&lt;/li>
+        &lt;li>druga pozycja  
+          &lt;ol>
+            &lt;li>druga pozycja pierwszy podpunkt&lt;/li>
+            &lt;li>druga pozycja drugi podpunkt&lt;/li>
+            &lt;li>druga pozycja trzeci podpunkt&lt;/li>
+          &lt;/ol>
+        &lt;/li>   
+      &lt;li>trzecia pozycja&lt;/li>
+    &lt;/ol>
+  </code></pre>
+
+      <section class="links">
+        <h4> WIĘCEJ INFORMACJI &nbsp;
+          <i class="fas fa-info-circle"></i>
+        </h4>
+
+        <table>
+          <thead>
+            <tr>
+              <th> W języku angielskim </th>
+              <th> W języku polskim </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com/tags/tag_ol.asp">w3schools</a>
+              </td>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="http://www.kurshtml.edu.pl/html/wykaz,tekst.html">kurs HTML</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.javatpoint.com/html-ordered-list">javaTpoint</a>
+              </td>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="http://miroslawzelent.pl/kurs-html/listy-ul-ol/">miroslawzelent</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+    </section>
+  </article>
+  <p class="parallax">
+    <img src="images/csshtml.png" alt="css html logos">
+  </p>
+
+  <article class="table">
+    <a id="pre"></a>
+    <h3>Znacznik tekstu formatowanego
+      <span style="color:#2dd28d">&lt;pre&gt;</span>
+    </h3>
+    <section class="main">
+      <p>
+        Reprezentuje zawartość, której treść ze względu na swoje pochodzenie oraz formę musi zostać zaprezentowana w sposób z góry
+        narzucony przez różne standardy typografii. Zawartością elementu
+        <b>&lt;pre&gt;</b> może być na przykład fragment kodu komputerowego zamkniętego w znaczniki
+        <b>&lt;code&gt;</b>
+        <b>&lt;/code&gt;</b>.
+      </p>
+      <p>
+        <b>&lt;code&gt;</b> - blok kodu</p>
+
+      <h4>PRZYKŁAD</h4>
+
+      <img src="images/pre.png" alt="tekst formatowany">
+      <pre><code>
+    &lt;pre>&lt;code>
+    #include &lt;iostream>
+    using namespace std;
+
+    int main()
+    {
+        cout &lt;&lt; "Hello World!";
+
+        return 0;
+    }
+
+    &lt;/code>&lt;/pre>
+  </code></pre>
+
+      <section class="links">
+        <h4> WIĘCEJ INFORMACJI &nbsp;
+          <i class="fas fa-info-circle"></i>
+        </h4>
+
+        <table>
+          <thead>
+            <tr>
+              <th> W języku angielskim </th>
+              <th> W języku polskim </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com/tags/tag_pre.asp">w3schools</a>
+              </td>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="http://www.kurshtml.edu.pl/html/pre,html.html">kurs HTML</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.tutorialspoint.com/html/html_pre_tag.htm">tutorialspoint</a>
+              </td>
+              <td>
+                <a target="_blank" rel="noopener noreferrer" href="http://webkod.pl/kurs-html/tagi/grupowanie-zawartosci/element-pre">Web kod</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+    </section>
+  </article>
+
+
+  <footer>
+    Piłat Magdalena
+  </footer>
+</body>
+
+</html>
